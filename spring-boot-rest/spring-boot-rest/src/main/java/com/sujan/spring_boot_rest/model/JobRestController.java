@@ -47,9 +47,21 @@ public class JobRestController {
         service.deletePost(postId);
         return "Delete Successfully";
     }
+    @GetMapping("load")
+    public String getAllPost(){
+        service.load();
+
+        return "success";
+    }
+
+    @GetMapping("jobPosts/keyword/{keyword}")
+    public List<JobPost> search(@PathVariable String keyword){
+        return service.search(keyword);
+    }
 
     /*
     * Consumes and Produce is for content negotiation to restrike user with media format
+    *
     * */
 
 }
