@@ -1,4 +1,10 @@
 package com.sujan.SpringEcom.dto;
 
-public record OrderItemRequest() {
+import java.math.BigDecimal;
+
+public record OrderItemRequest(
+        int productId,
+        int quantity
+//        BigDecimal price
+) {
 }
