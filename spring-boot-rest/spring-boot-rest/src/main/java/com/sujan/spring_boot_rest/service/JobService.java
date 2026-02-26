@@ -50,6 +50,7 @@ public class JobService {
 
     /*findById return Optional*/
     public JobPost getJob(int postId){
+//        int value = 10/0; /// This for occurring exception
         return repo.findById(postId).orElse(new JobPost()); // if not found return empty object
     }
 
