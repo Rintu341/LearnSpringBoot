@@ -1,4 +1,4 @@
-package com.sujan.spring_secu_demo;
+package com.sujan.spring_secu_demo.model;
 
 
 import lombok.AllArgsConstructor;

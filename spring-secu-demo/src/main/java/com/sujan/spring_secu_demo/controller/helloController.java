@@ -1,4 +1,4 @@
-package com.sujan.spring_secu_demo;
+package com.sujan.spring_secu_demo.controller;
 
 
 import jakarta.servlet.http.HttpServletRequest;

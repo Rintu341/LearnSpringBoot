@@ -1,5 +1,6 @@
-package com.sujan.spring_secu_demo;
+package com.sujan.spring_secu_demo.controller;
 
+import com.sujan.spring_secu_demo.model.Student;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.GetMapping;
