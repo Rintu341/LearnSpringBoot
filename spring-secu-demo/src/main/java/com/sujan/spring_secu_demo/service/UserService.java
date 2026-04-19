@@ -15,9 +15,15 @@ public class UserService {
     private BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
 
     public User saveUser(User user){
+
+        if (userRepo.findByUsername(user.getUsername()) != null) {
+            throw new RuntimeException("User already exists");
+        }
         user.setPassword(encoder.encode(user.getPassword()));
         System.out.println(user.getPassword());
         return userRepo.save(user);
     }
+
+
 
 }
